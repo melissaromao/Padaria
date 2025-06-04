@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha Padaria</title>
+    <link rel="shortcut icon" href="padaria-logo.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,85 +16,157 @@
 
   <body>
     <header>
-      <nav>
-        <ul class="menu">
-          <li><a href="#">Doces</a></li>
-          <li><a href="#">Salgados</a></li>
-          <li><a href="#">Encomendas</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Trabalhe Conosco</a></li>
-          <li><a href="#">Conta</a></li>
-        </ul>
-      </nav>
-    </header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div style="background-color: #faba66" class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="padaria-logo.png" alt="Logo" width="30" />
+            <strong>Minha Padaria</strong>
+          </a>
 
-    <section class="destaque">
-      <h1>Minha Padaria</h1>
-      <div class="destaque-resumo">
-        <img src="img1.jpg" alt="Imagem da padaria" />
-        <p>Na Minha Padaria, a tradição e ...</p>
-      </div>
-    </section>
-
-    <section class="cardapio">
-      <h2>Cardápio</h2>
-      <img src="padaria02.png" alt="Lanche 1" />
-      <h3>Lanches</h3>
-      <div class="card">
-        <div class="card-food">
-          <h4>Lanche do Forno</h4>
-          <p>...</p>
-        </div>
-
-        <div class="card-food">
-          <div class="card-food">
-            <h4>Lanche do Forno</h4>
-            <p>...</p>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trabalhe Conosco</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Produtos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#Car">Doces</a></li>
+                  <li><a class="dropdown-item" href="#Car">Salgados</a></li>
+                  <li><a class="dropdown-item" href="#Car">Encomendas</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </header>
+    
+    <div class="mx-auto p-5">
+                  <div class="alert alert-warning" role="alert">
+  <h4 class="alert-heading"><strong>Atenção usuário</strong>!</h4>
+  <p>Nossa padaria está em reforme e está aceitando somente pedidos sob encomenda!</p>
+  <hr>
+  <p class="mb-0">Assim, todos os produtos escrito de retirada na padaria estão <strong>indisponíveis.</strong></p>
+</div>
 
-        <div class="card-food">
-          <h4>Lanche Clássico</h4>
-          <p>...</p>
+      <section class="destaque">
+        <div class="text-center">
+          <h1>Boas-vindas!</h1>
+          <img src="img1.jpg" class="rounded" alt="Pão" />
         </div>
+      </section>
+      <br />
 
-        <div class="card-food">
-          <h4>Lanche Bacon & Queijo</h4>
-          <p>...</p>
+      <section class="text-center">
+        <div class="row"><br>
+          <h2>Nosso Cardápio</h2>
+          <img src="padaria02.png" alt="Lanche 1" />
+    
+          <h3 class="text-center">Lanches</h3>
+          <div class="row p-3">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <img src="paodequeijo.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Lanche de Forno</h5>
+                  <p class="card-text">Lanches deliciosos assados no forno, como pão de queijo, esfiha, pão de batata e muito mais!</p>
+                  <a href="#" class="btn btn-secondary" id="liveAlertBtn"><strong>indisponível</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <img src="lanchebaconqueijo.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Lanche Bacon & Queijo</h5>
+                  <p class="card-text">Sanduíche de hamburguer com bastante bacon e queijo.</p>
+                  <a href="#" class="btn btn-secondary" id="liveAlertBtn"><strong>indisponível</strong></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<section class="text-center">
+        <div class="row p-3">
+          <h2>Refeições</h2>
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <img src="frango.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Frango Assado com Batatas</h5>
+                  <p class="card-text"><strong>O especial do domingão!</strong> Experimente nosso delicioso frango assado com batata acompanhado com aquela farofa</p>
+                  <a href="#" class="btn btn-success" id="liveAlertBtn"><strong>Encomendar</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <img src="Feijoada-deliciosa.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Feijoada</h5>
+                  <p class="card-text"><strong>Bateu a vontade de feijoada?</strong>O especial das quartas e sábados acompanha arroz, farofa e couve refogada só aqui na <b><i>Padaria</i></b>.</p>
+                  <a href="#" class="btn btn-secondary" id="liveAlertBtn"><strong>indisponível</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+                    <div class="row p-3">
+          <h2>Refeições</h2>
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <img src="marmitafit.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Marmita Fit</h5>
+                  <p class="card-text"><strong>Fazendo aquela dieta?</strong> Relaxa, aqui na padaria temos as mais saborosas marmitas fit! Aqui você escolhe a proteína, vegetal e legume.</p>
+                  <a href="#" class="btn btn-success" id="liveAlertBtn"><strong>Encomendar</strong></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <img src="strogonoff.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Strogonoff de Carne</h5>
+                  <p class="card-text"><strong>O clássico Strogonoff</strong> aqui temos! E nunca perde a graça, nosso strogonoff é feito com a melhor alcatra do mercado, acompanhada de arroz e batata palha.</p>
+                  <a href="#" class="btn btn-secondary" id="liveAlertBtn"><strong>indisponível</strong></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          </div>
         </div>
-      </div>
-
-      <h3>Refeições</h3>
-      <div class="card">
-        <div class="card-food">
-          <h4>Frango Assado com Batatas</h4>
-          <p>...</p>
-        </div>
-
-        <div class="card-food">
-          <h4>Feijoada</h4>
-          <p>...</p>
-        </div>
-
-        <div class="card-food">
-          <h4>Marmita Fit</h4>
-          <p>...</p>
-        </div>
-
-        <div class="card-food">
-          <h4>Strogonoff de Carne</h4>
-          <p>...</p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Minha Padaria - Todos os direitos reservados.</p>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
+      </section>
+    </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous">
+    </script>
   </body>
 </html>
